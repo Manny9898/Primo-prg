@@ -3,13 +3,18 @@ public class EsattamenteUnaCoppia {
 
 	public static void main(String[] args) {
 		Scanner input=new Scanner(System.in);
-		int [] vett = {1, 2, 3, 3, 5, 5};
+		int [] vett = {1, 2, 6, 3, 5, 8};
 		int [] vett1 = new int[6];
 		verifica(vett, vett1);
 	}
 	
 	public static void verifica(int vett[], int vett1[]) {
 		int i, j, contaC=0;
+		for(i=0; i<vett.length; i++){
+			System.out.print("|"+vett[i]);
+		}//for
+		System.out.println();
+		System.out.println();
 		boolean b;
 		for(i=0; i<vett.length; i++){
 			b=false;
